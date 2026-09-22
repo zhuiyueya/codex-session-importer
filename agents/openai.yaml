@@ -1,0 +1,4 @@
+interface:
+  display_name: "Import Codex Session"
+  short_description: "Import shared chats as resumable Codex sessions"
+  default_prompt: "Use $import-codex-session to import this shared conversation as a resumable local Codex API session."

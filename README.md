@@ -1,5 +1,7 @@
 # Codex Session Importer
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 Turn external chat history into a real, resumable Codex session.
 
 `import-codex-session` is a Codex Skill plus a deterministic local importer. It converts ChatGPT share transcripts or local Markdown, JSON, and JSONL conversations into native Codex threads through the official Codex App Server migration API.

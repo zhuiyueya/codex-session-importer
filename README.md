@@ -25,6 +25,31 @@ Requirements:
 - Codex CLI or Codex Desktop with App Server support.
 - API-key authentication by default. Other configured authentication modes require `--auth-mode any`.
 
+### Install with an AI coding agent
+
+If your AI coding agent has local filesystem and terminal access, send it this:
+
+```text
+Install the Codex Skill from https://github.com/zhuiyueya/codex-session-importer
+into ~/.codex/skills/import-codex-session. Inspect the repository before installing,
+do not overwrite an existing installation without asking, validate the installed Skill,
+run `node ~/.codex/skills/import-codex-session/scripts/import_session.mjs --help`,
+and then tell me how to use $import-codex-session.
+```
+
+中文安装提示：
+
+```text
+请将 https://github.com/zhuiyueya/codex-session-importer 安装为 Codex Skill，
+目标目录是 ~/.codex/skills/import-codex-session。安装前先检查仓库内容；如果目标目录
+已经存在，不要直接覆盖，先询问我。安装后请验证 Skill，运行导入脚本的 --help，
+最后告诉我如何使用 $import-codex-session。
+```
+
+This works with Codex and other local coding agents that can access your terminal. A web-only chat assistant cannot install files on your machine.
+
+### Install manually
+
 Clone the repository into the Codex skills directory:
 
 ```bash
